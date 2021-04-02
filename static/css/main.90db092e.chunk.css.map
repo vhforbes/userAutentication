@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/resources/global.css"],"names":[],"mappings":"AAAA,EAEE,SAAU,CACV,qBACF,CAEA,OALE,QAOF,CAEA,eAAkB,YAAe","file":"main.90db092e.chunk.css","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n}\n\ntextarea, input { outline: none; }"]}
