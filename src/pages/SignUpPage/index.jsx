@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import validator from 'email-validator';
-import { Swiper } from '../../components/Swiper';
+import { SwiperComponent } from '../../components/Swiper';
 
 import Form from '../../containers/Form';
 import { SignInAndOut } from '../../Layouts/SignInAndOut';
@@ -58,7 +58,7 @@ export const SignUpPage = () => {
   return (
     <S.SignInWrapper data-testid="sign-up">
       <SignInAndOut>
-        <Swiper />
+        <SwiperComponent />
         <Form onSubmit={(e) => onSubmit(e)} title="Getting Started">
           <FormInput name="userFullName" type="text" label="Full Name" value={userFullName} handleChange={handleChange} />
           {!userNameError ? null : (

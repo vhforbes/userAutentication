@@ -15,7 +15,7 @@ export const FormContainer = styled.form`
 
   @media ${device.mobile} {
     height: 100%;
-    margin: ${rem(20)} 0;
+    margin: ${rem(80)} 0;
   }
 `;
 
@@ -23,7 +23,7 @@ export const Title = styled.h1`
   ${fonts.multiRegular}
   font-size: ${rem(fonts.title)};
   color: ${color.gray};
-  margin-bottom: ${rem(109)};
+  margin-bottom: ${rem(60)};
   text-align: center;
   @media ${device.mobile} {
     margin: ${rem(10)} 0;

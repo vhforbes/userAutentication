@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-// import { rem } from 'polished';
+import { rem } from 'polished';
 
 import color from '../../resources/colorVariables';
-// import fonts from '../../resources/fontVariables';
+import fonts from '../../resources/fontVariables';
 import device from '../../resources/sizeQueries';
 
 export const SignInAndOutWrapper = styled.div`
@@ -19,5 +19,15 @@ export const SignInAndOutWrapper = styled.div`
   }
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled.p`
+  ${fonts.avenirHeavy};
+  font-size: ${fonts.big};
+  position: absolute;
+  right: ${rem(110)};
+  top: ${rem(40)};
+
+  @media ${device.mobile} {
+    right: ${rem(20)};
+    top: ${rem(630)};
+  }
 `;
