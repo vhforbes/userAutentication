@@ -12,6 +12,7 @@ export const SwiperWrapper = styled.div`
   text-align: center;
 
   @media ${device.mobile} {
+    padding-top: ${rem(30)};
     height: 600px;  
   }
 
@@ -25,7 +26,7 @@ export const SwiperWrapper = styled.div`
   @media ${device.mobile} {
     margin-top: 10px;
     width: 300px;
-    height: 65vh;  
+    height: 565px;  
     }
   }
 
