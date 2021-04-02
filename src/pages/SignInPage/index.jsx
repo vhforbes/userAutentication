@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import validator from 'email-validator';
+import { Link } from 'react-router-dom';
 import { SwiperComponent } from '../../components/Swiper';
 
 import Form from '../../containers/Form';
@@ -68,7 +69,7 @@ export const SignInPage = () => {
               <strong> Invision</strong>
               ?
               {' '}
-              <a href="/sign-up">Create Account</a>
+              <Link to="/sign-up">Create Account</Link>
             </p>
           </BottomForm>
         </Form>

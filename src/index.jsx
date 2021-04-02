@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -12,12 +12,12 @@ import './resources/global.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename="/">
       <Switch>
         <Route path="/" component={SignInPage} exact />
         <Route path="/sign-up" component={SignUpPage} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
