@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import validator from 'email-validator';
-import { Swiper } from '../../containers/Swiper';
+import { Swiper } from '../../components/Swiper';
 
 import Form from '../../containers/Form';
 import { SignInAndOut } from '../../Layouts/SignInAndOut';
@@ -21,7 +21,6 @@ export const SignInPage = () => {
     e.preventDefault();
     const isValidEmail = validator.validate(userName);
     setEmailError(!isValidEmail);
-
     if (password) {
       setPasswordError(false);
     } else setPasswordError(true);

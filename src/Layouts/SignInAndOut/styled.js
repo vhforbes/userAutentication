@@ -18,3 +18,6 @@ export const SignInAndOutWrapper = styled.div`
     flex-direction: column;
   }
 `;
+
+export const LogoWrapper = styled.div`
+`;

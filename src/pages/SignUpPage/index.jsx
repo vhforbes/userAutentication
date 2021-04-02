@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import validator from 'email-validator';
-import { Swiper } from '../../containers/Swiper';
+import { Swiper } from '../../components/Swiper';
 
 import Form from '../../containers/Form';
 import { SignInAndOut } from '../../Layouts/SignInAndOut';
