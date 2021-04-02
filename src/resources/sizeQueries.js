@@ -1,6 +1,5 @@
 const device = {
-  mobile: '(max-width: 425px)',
-  desktopS: '(max-width: 1024px)',
+  mobile: '(max-width: 1024px)',
   desktop: '(max-width: 2560px)',
 };
 

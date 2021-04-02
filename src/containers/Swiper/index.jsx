@@ -1,9 +1,11 @@
 import React from 'react';
 
+import * as S from './styled';
+
 export const Swiper = () => (
-  <div>
+  <S.SwiperWrapper>
     <h1> Swiper Here! </h1>
-  </div>
+  </S.SwiperWrapper>
 );
 
 export default Swiper;

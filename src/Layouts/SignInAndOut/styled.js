@@ -9,6 +9,10 @@ export const SignInAndOutWrapper = styled.div`
   background-color: ${color.white};
   display: flex;
   justify-content: space-between;
+
+  @media ${device.desktop} {
+    flex-direction: row;
+  }
   
   @media ${device.mobile} {
     flex-direction: column;

@@ -17,6 +17,12 @@ const fonts = {
     'font-family': 'Lato, sans-serif',
     'font-weight': '400',
   },
+  big: '35px',
+  title: '30px',
+  medium: '20px',
+  google: '18px',
+  regular: '16px',
+  small: '14px',
 };
 
 export default fonts;

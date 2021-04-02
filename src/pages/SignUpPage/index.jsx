@@ -11,18 +11,24 @@ import FormButton from '../../components/FormButton';
 import BottomForm from '../../containers/BottomForm';
 import GoogleButton from '../../components/GoogleButton';
 
-export const SignInPage = () => {
+export const SignUpPage = () => {
+  const [userFullName, setUserFullName] = useState('');
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState(false);
-  const [passwordlError, setPasswordError] = useState(false);
+  const [passwordError, setPasswordError] = useState(false);
+  const [userNameError, setUserNameError] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
     const isValidEmail = validator.validate(userName);
     setEmailError(!isValidEmail);
 
-    if (password) {
+    if (!userFullName) {
+      setUserNameError(true);
+    } else setUserNameError(false);
+
+    if (password.length >= 6) {
       setPasswordError(false);
     } else setPasswordError(true);
   };
@@ -33,6 +39,10 @@ export const SignInPage = () => {
     switch (name) {
       case 'userName':
         setUserName(value);
+        break;
+
+      case 'userFullName':
+        setUserFullName(value);
         break;
 
       case 'password':
@@ -46,30 +56,48 @@ export const SignInPage = () => {
   };
 
   return (
-    <S.SignInWrapper data-testid="sign-in">
+    <S.SignInWrapper data-testid="sign-up">
       <SignInAndOut>
         <Swiper />
-        <Form onSubmit={(e) => onSubmit(e)} title="Welcome to Invision">
-          <FormInput name="userName" type="text" label="User name or Email" value={userName} handleChange={handleChange} />
+        <Form onSubmit={(e) => onSubmit(e)} title="Getting Started">
+          <FormInput name="userFullName" type="text" label="Full Name" value={userFullName} handleChange={handleChange} />
+          {!userNameError ? null : (
+            <S.ErrorMessage>
+              *Name can´t be empty
+            </S.ErrorMessage>
+          )}
+          <FormInput name="userName" type="text" label="Email" value={userName} handleChange={handleChange} />
           {!emailError ? null : (
             <S.ErrorMessage>
               *Please enter a valid email address
             </S.ErrorMessage>
           )}
           <FormInput name="password" type="password" label="Password" value={password} handleChange={handleChange} />
-          {!passwordlError ? null : <S.ErrorMessage>*Please fill your password</S.ErrorMessage>}
-          <S.ForgotPassword>
-            <a href="/">Forgot Password?</a>
-          </S.ForgotPassword>
-          <FormButton type="submmit" label="Sign In" />
+          {!passwordError ? null : (
+            <S.ErrorMessage>
+              *Password needs at leat 6 characters
+            </S.ErrorMessage>
+          )}
+          <FormButton type="submmit" label="Sign Up" />
           <BottomForm>
-            <GoogleButton title="Sign In With Google" />
+            <GoogleButton title="Sign Up With Google" />
             <p>
-              New to
-              <strong> Invision</strong>
+              By signing up you agree to
+              <strong> Invision </strong>
+              <br />
+              <a href="/">Terms and conditions</a>
+              {' '}
+              and
+              {' '}
+              <a href="/">Privacy Policy</a>
+            </p>
+            <p>
+              Already on
+              {' '}
+              <strong> Invision </strong>
               ?
               {' '}
-              <a href="/sign-up">Create Account</a>
+              <a href="/">Log In</a>
             </p>
           </BottomForm>
         </Form>
@@ -78,4 +106,4 @@ export const SignInPage = () => {
   );
 };
 
-export default SignInPage;
+export default SignUpPage;

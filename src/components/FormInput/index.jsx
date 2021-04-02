@@ -2,20 +2,15 @@ import React from 'react';
 
 import * as S from './styled';
 
-const FormInput = () => {
-  const onChange = (e) => {
-    e.value = 'value';
-    return '';
-  };
-
-  return (
-    <S.InputWrapper>
-      <S.InputLabel>
-        Invision
-        <S.Input onChange={(e) => onChange(e)} />
-      </S.InputLabel>
-    </S.InputWrapper>
-  );
-};
+const FormInput = ({
+  name, label, type, handleChange,
+}) => (
+  <S.InputWrapper>
+    <S.InputLabel>
+      {label}
+    </S.InputLabel>
+    <S.Input name={name} type={type} onChange={handleChange} />
+  </S.InputWrapper>
+);
 
 export default FormInput;
