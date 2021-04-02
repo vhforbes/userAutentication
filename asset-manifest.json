@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/zapptsChanllenge/static/css/main.90db092e.chunk.css",
-    "main.js": "/zapptsChanllenge/static/js/main.7ae2c3ee.chunk.js",
-    "main.js.map": "/zapptsChanllenge/static/js/main.7ae2c3ee.chunk.js.map",
+    "main.js": "/zapptsChanllenge/static/js/main.99d82c84.chunk.js",
+    "main.js.map": "/zapptsChanllenge/static/js/main.99d82c84.chunk.js.map",
     "runtime-main.js": "/zapptsChanllenge/static/js/runtime-main.90f30528.js",
     "runtime-main.js.map": "/zapptsChanllenge/static/js/runtime-main.90f30528.js.map",
     "static/css/2.1597a7df.chunk.css": "/zapptsChanllenge/static/css/2.1597a7df.chunk.css",
-    "static/js/2.4642643e.chunk.js": "/zapptsChanllenge/static/js/2.4642643e.chunk.js",
-    "static/js/2.4642643e.chunk.js.map": "/zapptsChanllenge/static/js/2.4642643e.chunk.js.map",
+    "static/js/2.c721d5f8.chunk.js": "/zapptsChanllenge/static/js/2.c721d5f8.chunk.js",
+    "static/js/2.c721d5f8.chunk.js.map": "/zapptsChanllenge/static/js/2.c721d5f8.chunk.js.map",
     "index.html": "/zapptsChanllenge/index.html",
     "static/css/2.1597a7df.chunk.css.map": "/zapptsChanllenge/static/css/2.1597a7df.chunk.css.map",
     "static/css/main.90db092e.chunk.css.map": "/zapptsChanllenge/static/css/main.90db092e.chunk.css.map",
-    "static/js/2.4642643e.chunk.js.LICENSE.txt": "/zapptsChanllenge/static/js/2.4642643e.chunk.js.LICENSE.txt",
+    "static/js/2.c721d5f8.chunk.js.LICENSE.txt": "/zapptsChanllenge/static/js/2.c721d5f8.chunk.js.LICENSE.txt",
     "static/media/google.c3d26fca.svg": "/zapptsChanllenge/static/media/google.c3d26fca.svg",
     "static/media/swiperimage.279910e7.png": "/zapptsChanllenge/static/media/swiperimage.279910e7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.90f30528.js",
     "static/css/2.1597a7df.chunk.css",
-    "static/js/2.4642643e.chunk.js",
+    "static/js/2.c721d5f8.chunk.js",
     "static/css/main.90db092e.chunk.css",
-    "static/js/main.7ae2c3ee.chunk.js"
+    "static/js/main.99d82c84.chunk.js"
   ]
 }
