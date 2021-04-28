@@ -2,7 +2,7 @@
 
 Pagina de autenticação e registo de usuários.
 
-[Acesse aqui!](https://vhforbes.github.io/zapptsChanllenge/)
+[Acesse aqui!](https://vhforbes.github.io/userAutentication/)
 
 
 # Getting Started with Create React App
