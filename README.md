@@ -1,16 +1,8 @@
 # Hey! I'm Victor Hugo.
 
-Primeiramente agredeço a oportunidade de participar do processo seletivo. Gostei muito de desenvolver a página do desafio e estou confiante para seguir para as próximas etapas.
-
-Para incrementar o projeto, configurei o linter com o padrão Airbnb pois considero de extrema importancia regras que ajudam na organização ao desenvolvermos em equipe.
-
-A organização de pastas e componentes foi inspirada no repositório do meu emprego atual. Lá construimos ecommerces de grande porte!
-
-Também disponibilizei no Github Pages a aplicação caso tenham interesse! 
+Pagina de autenticação e registo de usuários.
 
 [Acesse aqui!](https://vhforbes.github.io/zapptsChanllenge/)
-
-Aguardo anciosamente o contato! Qualquer dúvida sobre o projeto, me mantenho a disposição.
 
 
 # Getting Started with Create React App
